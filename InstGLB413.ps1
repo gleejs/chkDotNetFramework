@@ -15,7 +15,7 @@ Switch -Regex ($os.version)
                        if ($version -lt '379893')
                        {
                             Write-Host "DotNETFramework 4.5 Not Installed"
-                            $dotProg = "\\glbmdt01\deploymentshare$\Applications\DOTNETFRAMEWORK\NDP452-KB2901907-x86-x64-AllOS-ENU.exe"
+                            $dotProg = "\\DepServer\deploymentshare$\Applications\DOTNETFRAMEWORK\NDP452-KB2901907-x86-x64-AllOS-ENU.exe"
                             $dotArgs = " /q /norestart"
                             start-process $dotProg  "$dotArgs" -Wait
                        }
